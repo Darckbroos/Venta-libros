@@ -99,6 +99,19 @@ class Command(BaseCommand):
                 'is_featured': True,
                 'seo_title': 'Atomic Habits - James Clear | Desarrollo Personal',
                 'seo_description': 'Transforma tus hábitos, transforma tu vida. El método definitivo.',
+            },
+            {
+                'title': 'Clean Code',
+                'slug': 'clean-code',
+                'author': 'Robert C. Martin',
+                'short_description': 'A Handbook of Agile Software Craftsmanship.',
+                'long_description': 'Even bad code can function. But if code isn\'t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn\'t have to be that way.',
+                'price': '35000',
+                'stock': 15,
+                'is_active': True,
+                'is_featured': True,
+                'seo_title': 'Clean Code - Robert C. Martin',
+                'seo_description': 'A must-read for any software developer.',
             }
         ]
 

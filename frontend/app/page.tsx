@@ -1,7 +1,11 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { booksApi, Book } from '@/lib/api';
+import { useState, useEffect } from 'react';
+import { Book } from '@/lib/api';
 import { BookCard } from '@/components/BookCard';
+import { ContactForm } from '@/components/ContactForm';
 import styles from './page.module.css';
 
 async function getBooks(): Promise<Book[]> {
@@ -17,10 +21,20 @@ async function getBooks(): Promise<Book[]> {
   }
 }
 
-export default async function HomePage() {
-  const books = await getBooks();
+export default function HomePage() {
+  const [books, setBooks] = useState<Book[]>([]);
+  const [showContactForm, setShowContactForm] = useState(false);
+
+  useEffect(() => {
+    getBooks().then(setBooks);
+  }, []);
+
   const featuredBooks = books.filter(b => b.is_featured);
   const regularBooks = books.filter(b => !b.is_featured);
+
+  const toggleContactForm = () => {
+    setShowContactForm(!showContactForm);
+  };
 
   return (
     <div className={styles.page}>
@@ -168,9 +182,10 @@ export default async function HomePage() {
         <div className={styles.container}>
           <h2>¿Necesitas Ayuda para Elegir?</h2>
           <p>Contáctanos y te orientamos en tu búsqueda</p>
-          <a href="mailto:contacto@libreria.com" className={styles.ctaButton}>
+          <button onClick={toggleContactForm} className={styles.ctaButton}>
             Escríbenos
-          </a>
+          </button>
+          {showContactForm && <ContactForm />}
         </div>
       </section>
     </div>
