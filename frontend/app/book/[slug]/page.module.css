@@ -1,0 +1,147 @@
+.page {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.imageSection {
+  position: sticky;
+  top: 100px;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--color-bg-secondary);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.author {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+}
+
+.stock {
+  margin-bottom: 24px;
+}
+
+.inStock {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.outOfStock {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 32px;
+}
+
+.description h2,
+.features h2 {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.description p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.longDescription p {
+  margin-bottom: 12px;
+}
+
+.features {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius);
+}
+
+.features ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features li {
+  color: var(--color-text);
+}
+
+.features li::before {
+  content: "✓";
+  color: var(--color-success);
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .imageSection {
+    position: static;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+}

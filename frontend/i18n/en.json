@@ -1,0 +1,56 @@
+{
+  "common": {
+    "buyNow": "Buy Now",
+    "addToCart": "Add to Cart",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "viewDetails": "View Details"
+  },
+  "hero": {
+    "title": "Discover Your Next Great Read",
+    "subtitle": "Quality books at amazing prices",
+    "cta": "Browse Collection"
+  },
+  "book": {
+    "author": "Author",
+    "price": "Price",
+    "description": "Description",
+    "features": "What You'll Learn",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock"
+  },
+  "checkout": {
+    "title": "Complete Your Purchase",
+    "shippingInfo": "Shipping Information",
+    "orderSummary": "Order Summary",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "region": "Region/State",
+    "city": "City/Commune",
+    "address": "Address",
+    "addressDetails": "Address Details (optional)",
+    "reference": "Reference Notes (optional)",
+    "orderNotes": "Order Notes (optional)",
+    "placeOrder": "Place Order",
+    "processing": "Processing..."
+  },
+  "success": {
+    "title": "Thank You for Your Purchase!",
+    "message": "Your order has been confirmed. We'll send you a confirmation email shortly.",
+    "orderId": "Order ID",
+    "continueShopping": "Continue Shopping"
+  },
+  "failure": {
+    "title": "Payment Failed",
+    "message": "There was an issue processing your payment. Please try again.",
+    "tryAgain": "Try Again"
+  },
+  "footer": {
+    "contact": "Contact",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "common": {
+    "buyNow": "Comprar Ahora",
+    "addToCart": "Agregar al Carrito",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "viewDetails": "Ver Detalles"
+  },
+  "hero": {
+    "title": "Descubre Tu Próxima Gran Lectura",
+    "subtitle": "Libros de calidad a precios increíbles",
+    "cta": "Ver Colección"
+  },
+  "book": {
+    "author": "Autor",
+    "price": "Precio",
+    "description": "Descripción",
+    "features": "Lo Que Aprenderás",
+    "outOfStock": "Agotado",
+    "inStock": "En Stock"
+  },
+  "checkout": {
+    "title": "Completa Tu Compra",
+    "shippingInfo": "Información de Envío",
+    "orderSummary": "Resumen del Pedido",
+    "fullName": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "region": "Región/Estado",
+    "city": "Ciudad/Comuna",
+    "address": "Dirección",
+    "addressDetails": "Detalles de Dirección (opcional)",
+    "reference": "Notas de Referencia (opcional)",
+    "orderNotes": "Notas del Pedido (opcional)",
+    "placeOrder": "Realizar Pedido",
+    "processing": "Procesando..."
+  },
+  "success": {
+    "title": "¡Gracias Por Tu Compra!",
+    "message": "Tu pedido ha sido confirmado. Te enviaremos un correo de confirmación pronto.",
+    "orderId": "ID del Pedido",
+    "continueShopping": "Seguir Comprando"
+  },
+  "failure": {
+    "title": "Pago Fallido",
+    "message": "Hubo un problema al procesar tu pago. Por favor intenta de nuevo.",
+    "tryAgain": "Intentar de Nuevo"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "about": "Acerca de",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  }
+}
